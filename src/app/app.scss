@@ -1,0 +1,16 @@
+.game-item {
+	width: 15rem;
+	height: 15rem;
+	border-radius: 1rem;
+}
+
+.game-list {
+	display: flex;
+	width: 80%;
+	flex-wrap: wrap;
+	background: #b7b7b7;
+	gap: 1rem;
+	height: 50rem;
+	overflow: auto;
+	margin: auto;
+}

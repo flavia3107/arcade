@@ -6,7 +6,7 @@ import { SafeUrlPipe } from '../shared/pipes/safeUrl';
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule, SafeUrlPipe, CommonModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
