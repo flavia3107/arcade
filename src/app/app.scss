@@ -1,16 +1,24 @@
-.game-item {
-	width: 15rem;
-	height: 15rem;
-	border-radius: 1rem;
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 98vh;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 .game-list {
-	display: flex;
-	width: 80%;
-	flex-wrap: wrap;
-	background: #b7b7b7;
+	width: 100%;
+	max-width: 63.5rem;
+	display: grid;
 	gap: 1rem;
-	height: 50rem;
+	grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
 	overflow: auto;
-	margin: auto;
+}
+
+.game-item {
+	height: 15rem;
+	border-radius: 1rem;
 }

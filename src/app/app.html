@@ -1,17 +1,21 @@
-<select [(ngModel)]="selectedGame">
+<!-- <select [(ngModel)]="selectedGame">
   <option [ngValue]="''">Select a game</option>
   <option *ngFor="let game of games" [ngValue]="game.url">
 
   </option>
 </select>
+ -->
 
-<div class="game-list">
-  @for(game of games; track $index){
-  <div class="game-item">
-    {{ game.name }}
+<div class="wrapper">
+  <div class="game-list">
+    @for(game of games; track $index){
+    <div class="game-item">
+      {{ game.name }}
+    </div>
+    }
   </div>
-  }
 </div>
+
 
 <!-- <iframe *ngIf="selectedGame" [src]="selectedGame | safeUrl" width="800" height="600">
 </iframe> -->
