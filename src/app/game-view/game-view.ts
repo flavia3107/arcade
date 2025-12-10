@@ -3,10 +3,11 @@ import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs';
 import { SafeUrlPipe } from '../../shared/pipes/safeUrl';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-game-view',
-  imports: [SafeUrlPipe, AsyncPipe],
+  imports: [SafeUrlPipe, AsyncPipe, MatButtonModule],
   templateUrl: './game-view.html',
   styleUrl: './game-view.scss',
 })

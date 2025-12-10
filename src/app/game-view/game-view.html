@@ -1,5 +1,5 @@
 @let selectedGame = (gameUrl$ | async);
 @if(selectedGame){
-<button>Click</button>
+<button mat-button>Click</button>
 <iframe [src]="selectedGame | safeUrl" class="game-iframe"></iframe>
 }
