@@ -1,12 +1,4 @@
-<div class="wrapper">
-  <div class="game-list">
-    @for(game of games; track $index){
-    <a [routerLink]="['/', game.url]" class="game-item">
-      {{ game.name }}
-    </a>
-    }
-  </div>
-</div>
+<router-outlet></router-outlet>
 
 <!-- to do: style -->
 <!-- to do: config -->
