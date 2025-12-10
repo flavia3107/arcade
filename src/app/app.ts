@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { GAMES } from '../shared/configs/models';
-import { SafeUrlPipe } from '../shared/pipes/safeUrl';
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule, SafeUrlPipe, CommonModule],
+  imports: [FormsModule, RouterModule, CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
