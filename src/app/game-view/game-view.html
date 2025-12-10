@@ -1,5 +1,15 @@
 @let selectedGame = (gameUrl$ | async);
 @if(selectedGame){
-<button mat-button>Click</button>
+<div class="menu">
+	<a routerLink="/" mat-button>Main</a>
+	<button mat-button [matMenuTriggerFor]="menu">Games</button>
+</div>
+
 <iframe [src]="selectedGame | safeUrl" class="game-iframe"></iframe>
 }
+
+<mat-menu #menu="matMenu">
+	@for(game of games; track $index){
+	<a mat-menu-item [routerLink]="['/', game.url]">{{game.name}}</a>
+	}
+</mat-menu>
