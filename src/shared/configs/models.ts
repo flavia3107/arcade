@@ -1,9 +1,9 @@
 export const GAMES = [
-	{ name: 'Game 1', url: 'timer-game' },
-	{ name: 'Game 2', url: 'tic-tac-toe' },
-	{ name: 'Game 3', url: 'freecodecamp-gorilla-game' },
-	{ name: 'Game 3', url: 'freecodecamp-snake-game' },
-	{ name: 'Game 3', url: 'freecodecamp-melting-snowman' },
-	{ name: 'Game 3', url: 'quiz' },
-	{ name: 'Game 3', url: 'freecodecamp-sonic-game' }
+	{ name: 'Timer', url: 'timer-game' },
+	{ name: 'Tic-Tac-Toe', url: 'tic-tac-toe' },
+	{ name: 'Gorilla', url: 'freecodecamp-gorilla-game' },
+	{ name: 'Snake', url: 'freecodecamp-snake-game' },
+	{ name: 'Hangman', url: 'freecodecamp-melting-snowman' },
+	{ name: 'Quiz', url: 'quiz' },
+	{ name: 'Sonic', url: 'freecodecamp-sonic-game' }
 ];
