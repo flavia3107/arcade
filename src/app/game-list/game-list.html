@@ -1,7 +1,8 @@
 <div class="wrapper">
 	<div class="game-list">
 		@for(game of games; track $index){
-		<a [routerLink]="['/', game.url]" class="game-item">
+		@let imgUrl = `url("${game.img}")`;
+		<a [routerLink]="['/', game.url]" class="game-item" [style.background-image]="imgUrl">
 			{{ game.name }}
 		</a>
 		}
