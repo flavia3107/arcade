@@ -1,18 +1,20 @@
-<div class="wrapper">
-	<div class="game-list">
-		@for(game of games; track $index){
-		@let imgUrl = `url("${game.img}")`;
-		<div class="game-item">
-			<div class="game-content flex-column center middle">
-				{{ game.name }}
-			</div>
+<div class="wrapper flex-column middle center">
+	<div class="content">
+		<div class="game-list">
+			@for(game of games; track $index){
+			@let imgUrl = `url("${game.img}")`;
+			<div class="game-item">
+				<div class="game-content flex-column center middle">
+					{{ game.name }}
+				</div>
 
-			<div class="overlay flex-column center middle" [style.background-image]="imgUrl">
-				<button (click)="navigate( game.url)" mat-button class="button">
-					<span>Play</span>
-				</button>
+				<div class="overlay flex-column center middle" [style.background-image]="imgUrl">
+					<button (click)="navigate( game.url)" mat-button class="button">
+						<span>Play</span>
+					</button>
+				</div>
 			</div>
+			}
 		</div>
-		}
 	</div>
 </div>

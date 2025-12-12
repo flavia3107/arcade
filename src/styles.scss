@@ -28,3 +28,22 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
+::-webkit-scrollbar {
+	height: 0.563rem;
+	width: 0.563rem;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #d3d3d3;
+	width: 0.563rem;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+	width: 0.563rem;
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
