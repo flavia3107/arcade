@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { GAMES } from '../../shared/configs/models';
 
 @Component({
@@ -11,6 +11,11 @@ import { GAMES } from '../../shared/configs/models';
   styleUrl: './game-list.scss',
 })
 export class GameList {
+  private _router = inject(Router);
   games = GAMES;
   selectedGame = '';
+
+  public navigate(gameUrl: string) {
+    this._router.navigate(['/', gameUrl]);
+  }
 }

@@ -2,9 +2,17 @@
 	<div class="game-list">
 		@for(game of games; track $index){
 		@let imgUrl = `url("${game.img}")`;
-		<a [routerLink]="['/', game.url]" class="game-item" [style.background-image]="imgUrl">
-			{{ game.name }}
-		</a>
+		<div class="game-item">
+			<div class="game-content">
+				{{ game.name }}
+			</div>
+
+			<div class="overlay flex-column center middle" [style.background-image]="imgUrl">
+				<button (click)="navigate( game.url)" mat-button class="button">
+					<span>Open</span>
+				</button>
+			</div>
+		</div>
 		}
 	</div>
 </div>
