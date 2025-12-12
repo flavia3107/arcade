@@ -1,15 +1,19 @@
 import { Routes } from '@angular/router';
-import { App } from './app';
-import { GameList } from './game-list/game-list';
-import { GameView } from './game-view/game-view';
 
 export const routes: Routes = [
 	{
-		path: '', component: App, children: [
-			{ path: '', component: GameList },
-			{ path: ':slug', component: GameView }
+		path: '',
+		loadComponent: () => import('./app').then(m => m.App),
+		children: [
+			{
+				path: '',
+				loadComponent: () => import('./game-list/game-list').then(m => m.GameList)
+			},
+			{
+				path: ':slug',
+				loadComponent: () => import('./game-view/game-view').then(m => m.GameView)
+			}
 		]
 	},
 	{ path: '**', redirectTo: '', pathMatch: 'full' }
 ];
-
