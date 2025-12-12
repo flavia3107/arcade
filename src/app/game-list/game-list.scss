@@ -30,7 +30,13 @@
 
 	&:hover {
 		transform: scale(1.03);
+		background-color: rgba(0, 0, 0, 0.7);
 	}
+}
+
+.game-content {
+	width: 100%;
+	height: 100%;
 }
 
 .overlay {
@@ -39,7 +45,6 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
 	opacity: 0;
 	transition: opacity 0.3s ease;
 	gap: 1rem;
@@ -55,4 +60,23 @@
 
 .game-item:hover .game-content {
 	visibility: hidden;
+}
+
+.overlay::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 1rem;
+}
+
+.button {
+	position: relative;
+	z-index: 1;
+	background-color: #ffffff;
+}
+
+.button span {
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	font-weight: 600;
 }
