@@ -86,3 +86,28 @@
 	height: 75%;
 	overflow: auto;
 }
+
+.logo-txt {
+	padding-left: 7px;
+	display: flex;
+	flex-direction: column;
+	color: #232323;
+	align-items: flex-start;
+}
+
+.logo-txt h1 {
+	font-weight: bolder;
+	font-size: 0.85rem;
+	margin: 0;
+}
+
+.logo-txt span {
+	font-weight: lighter;
+	font-size: 0.75rem;
+}
+
+.toolbar {
+	width: fit-content;
+	text-decoration: none;
+	padding: 0.5rem;
+}
