@@ -1,0 +1,1 @@
+import{G as o,Z as p,cb as a,gb as i,oa as n}from"./chunk-443RLHZG.js";var r=class t{title=o("arcade");static \u0275fac=function(e){return new(e||t)};static \u0275cmp=p({type:t,selectors:[["app-root"]],decls:1,vars:0,template:function(e,l){e&1&&n(0,"router-outlet")},dependencies:[i,a],encapsulation:2})};export{r as a};
