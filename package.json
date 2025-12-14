@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production --base-href 'https://flavia3107.github.io/arcade/'",
-    "deploy": "npx angular-cli-ghpages --dir=dist/arcade",
+    "build": "ng build --configuration production --base-href /arcade/ --deploy-url /arcade/",
+    "deploy": "npx angular-cli-ghpages --dir=dist/arcade/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:arcade": "node dist/arcade/server/server.mjs"
