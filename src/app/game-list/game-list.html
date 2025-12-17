@@ -10,9 +10,8 @@
 		<div class="game-list">
 			@for(game of games; track $index){
 			@let imgUrl = `url("${game.img}")`;
-			@let coverUrl = `url("${game.cover}")`;
 			<div class="game-item">
-				<div class="game-content flex-column center middle" [style.background-image]="coverUrl">
+				<div class="game-content flex-column center middle" [style.background-image]="game.gradient">
 					{{ game.name }}
 				</div>
 

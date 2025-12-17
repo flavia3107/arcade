@@ -36,9 +36,6 @@
 .game-content {
 	width: 100%;
 	height: 100%;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
 }
 
 .overlay {
@@ -62,6 +59,7 @@
 
 .game-item:hover .game-content {
 	visibility: hidden;
+	display: none;
 }
 
 .overlay::after {
