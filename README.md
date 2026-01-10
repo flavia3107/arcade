@@ -37,4 +37,4 @@ This project is a mini **Angular** application that combines multiple small game
 
 ## 🚀 Live Demo
 
-[Demo](https://x.github.io/arcade/)
+[Demo](https://flavia3107.github.io/arcade/)
