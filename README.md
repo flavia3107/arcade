@@ -1,40 +1,40 @@
-🕹️ Frontend Arcade
+# 🕹️ Frontend Arcade
 
-This project is a mini Angular application that brings together multiple small games into a single retro-style arcade dashboard.
+This project is a mini **Angular** application that combines multiple small games into a single **retro-style arcade dashboard**.
 
-📌 Features
+---
 
-✅ Multiple mini-games in one arcade hub
-✅ Central dashboard with game selection
-✅ Global scoring and stats tracking
-✅ Retro arcade UI with pixel styling
-✅ Smooth navigation between games
-✅ Persistent data using localStorage
+## 📌 Features
 
-🛠️ Tech Stack
+✅ Multiple mini-games in one arcade hub  
+✅ Central arcade dashboard for game selection  
+✅ Global scoring, stats, and progress tracking  
+✅ Retro arcade UI with pixel fonts and neon effects  
+✅ Smooth routing between games  
+✅ Persistent data using localStorage  
 
-Languages: TypeScript, HTML, CSS
+---
 
-Framework: Angular
+## 🛠️ Tech Stack
 
-Styling: CSS3 (pixel fonts, neon effects)
+- **Languages**: TypeScript, HTML, CSS  
+- **Framework**: Angular  
+- **Styling**: CSS3 (pixel fonts, neon / CRT effects)  
+- **Tools**: Git, GitHub, VS Code  
 
-Tools: Git, GitHub, VS Code
+---
 
-🎯 Learning Objectives
+## 🎯 Learning Objectives
 
-Build a multi-module Angular application
+- Build a modular Angular application  
+- Share state across games using services  
+- Practice Angular routing and component design  
+- Implement global UI systems (score, XP, achievements)  
+- Persist data using browser storage  
+- Apply advanced CSS theming and animations  
 
-Share state across components using services
+---
 
-Manage routing between games
+## 🚀 Live Demo
 
-Implement reusable UI components
-
-Persist user data in the browser
-
-Apply advanced CSS theming techniques
-
-🚀 Live Demo
-
-[Demo](https://flavia3107.github.io/arcade/)
+[Demo](https://x.github.io/arcade/)
