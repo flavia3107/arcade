@@ -1,60 +1,40 @@
-# Arcade
+🕹️ Frontend Arcade
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.2.
+This project is a mini Angular application that brings together multiple small games into a single retro-style arcade dashboard.
 
-## Development server
+📌 Features
 
-To start a local development server, run:
+✅ Multiple mini-games in one arcade hub
+✅ Central dashboard with game selection
+✅ Global scoring and stats tracking
+✅ Retro arcade UI with pixel styling
+✅ Smooth navigation between games
+✅ Persistent data using localStorage
 
-```bash
-ng serve
-```
+🛠️ Tech Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Languages: TypeScript, HTML, CSS
 
-## Code scaffolding
+Framework: Angular
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Styling: CSS3 (pixel fonts, neon effects)
 
-```bash
-ng generate component component-name
-```
+Tools: Git, GitHub, VS Code
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+🎯 Learning Objectives
 
-```bash
-ng generate --help
-```
+Build a multi-module Angular application
 
-## Building
+Share state across components using services
 
-To build the project run:
+Manage routing between games
 
-```bash
-ng build
-```
+Implement reusable UI components
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Persist user data in the browser
 
-## Running unit tests
+Apply advanced CSS theming techniques
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+🚀 Live Demo
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# arcade
+[Demo](https://flavia3107.github.io/arcade/)
