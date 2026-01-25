@@ -1,8 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@600;700&display=swap");
+
+.arcade-title {
+	font-family: "Pacifico", "Baloo 2", cursive;
+	font-size: 3.2rem;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: #eaffff;
+	text-align: center;
+	text-shadow: 0 0 6px #00eaff, 0 0 12px #00eaff, 0 0 24px #00b3ff, 0 0 48px rgba(0, 179, 255, 0.9);
+}
+
 .wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 98vh;
+	height: 90vh;
 }
 
 * {
@@ -74,9 +86,18 @@
 }
 
 .button {
-	position: relative;
 	z-index: 1;
-	background-color: #ffffff;
+	padding: 1rem 2.5rem;
+	font-family: "Pacifico", cursive;
+	font-size: 1.5rem;
+	font-weight: 700;
+	background: linear-gradient(145deg, #00eaff, #008cff);
+	border: 2px solid #00eaff;
+	border-radius: 12px;
+	text-shadow: 0 0 5px #00eaff, 0 0 10px #00b3ff, 0 0 20px #008cff;
+	box-shadow: 0 0 10px #00eaff, 0 0 20px #00b3ff, 0 0 40px rgba(0, 179, 255, 0.6);
+	cursor: pointer;
+	transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
 }
 
 .button span {
@@ -84,9 +105,21 @@
 	color: #474747;
 }
 
+.button:hover {
+	transform: scale(1.1);
+	background: linear-gradient(145deg, #00ffff, #00aaff);
+	box-shadow: 0 0 20px #00eaff, 0 0 40px #00b3ff, 0 0 80px rgba(0, 179, 255, 0.8);
+}
+
+.button:active {
+	transform: scale(0.95);
+	box-shadow: 0 0 5px #00eaff, 0 0 15px #00b3ff;
+}
+
 .content {
 	width: 70%;
 	overflow: auto;
+	height: calc(100vh - 15rem);
 }
 
 .toolbar {
@@ -96,10 +129,31 @@
 }
 
 .neon-text {
+	font-family: "Baloo 2", cursive;
+	font-size: 1.2rem;
+	font-weight: 600;
 	color: #ffffff;
+	text-align: center;
+	margin-top: 0.5rem;
+	text-shadow: 0 0 2px #00eaff, 0 0 4px #00b3ff;
+}
+
+h1 {
+	font-family: "Pacifico", "Baloo 2", cursive;
+	font-size: 3.2rem;
 	font-weight: 700;
-	letter-spacing: 2px;
-	text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00b3ff, 0 0 40px #008cff, 0 0 80px #0066ff;
-	text-shadow: 0 0 5px #0049ff, 0 0 10px #161c2f, 0 0 20px #190508, 0 0 40px #e9ff00, 0 0 80px #fff800;
-	text-shadow: 0 0 5px #171320, 0 0 10px #d9dba5, 0 0 20px #000000;
+	letter-spacing: 3px;
+	color: #eaffff;
+	text-align: center;
+	text-shadow: 0 0 6px #00eaff, 0 0 12px #00eaff, 0 0 24px #00b3ff, 0 0 48px rgba(0, 179, 255, 0.9);
+	margin: 0;
+}
+h1::after {
+	content: "";
+	display: block;
+	width: 180px;
+	height: 3px;
+	margin: 12px auto 0;
+	background: #00eaff;
+	box-shadow: 0 0 6px #00eaff, 0 0 12px #00b3ff;
 }
