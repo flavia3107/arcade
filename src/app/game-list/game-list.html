@@ -7,8 +7,8 @@
 			@for(game of games; track $index){
 			@let imgUrl = `url("${game.img}")`;
 			<div class="game-item">
-				<div class="game-content flex-column center middle" [style.background-image]="game.gradient">
-					{{ game.name }}
+				<div class="game-content flex-column center middle">
+					<span class="neon-text neon-flicker"> {{ game.name }}</span>
 				</div>
 
 				<div class="overlay flex-column center middle" [style.background-image]="imgUrl">
