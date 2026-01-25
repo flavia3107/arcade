@@ -5,12 +5,13 @@ html {
 }
 
 body {
-	background: linear-gradient(180deg, #02040a, #050b18);
+	// background: linear-gradient(180deg, #02040a, #050b18);
 	min-height: 79vh;
 	box-sizing: border-box;
 	margin: 0;
 	overflow: hidden;
-	background-image: url("/background.png");
+	// background-image: url("/background.png");
+	background: #fff;
 }
 
 .center {
