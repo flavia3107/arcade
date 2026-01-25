@@ -100,11 +100,6 @@
 	transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
 }
 
-.button span {
-	font-weight: 600;
-	color: #474747;
-}
-
 .button:hover {
 	transform: scale(1.1);
 	background: linear-gradient(145deg, #00ffff, #00aaff);

@@ -10,6 +10,7 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	overflow: hidden;
+	background-image: url("/background.png");
 }
 
 .center {
@@ -29,21 +30,28 @@ body {
 	flex-direction: column;
 }
 
-::-webkit-scrollbar {
-	height: 0.563rem;
-	width: 0.563rem;
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #00eaff #05080f; /* thumb, track */
 }
 
-::-webkit-scrollbar-thumb {
-	background: #374a57;
-	width: 0.563rem;
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+	width: 10px;
 }
 
-::-webkit-scrollbar-track {
-	background: transparent;
-	width: 0.563rem;
+*::-webkit-scrollbar-track {
+	background: #05080f;
 }
 
-::-webkit-scrollbar-corner {
-	background: transparent;
+*::-webkit-scrollbar-thumb {
+	background: #00eaff;
+	border-radius: 10px;
+	box-shadow: 0 0 5px #00eaff, 0 0 10px #00b3ff;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: #00ffff;
+	box-shadow: 0 0 10px #00eaff, 0 0 20px #00b3ff;
 }
