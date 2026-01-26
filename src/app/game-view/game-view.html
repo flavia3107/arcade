@@ -1,8 +1,8 @@
 @let selectedGame = (gameUrl$ | async);
 @if(selectedGame){
 <div class="menu flex-row">
-	<a routerLink="/" mat-button> <span>Main</span> </a>
-	<button mat-button [matMenuTriggerFor]="menu">
+	<a class="neon" routerLink="/" mat-button> <span>Main</span> </a>
+	<button class="neon" mat-button [matMenuTriggerFor]="menu">
 		<span> Games</span>
 	</button>
 </div>
